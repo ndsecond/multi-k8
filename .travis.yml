@@ -1,4 +1,4 @@
-
+sudo: required
 services:
   - docker
 env:
@@ -24,6 +24,6 @@ deploy:
   provider: script
   script: bash ./deploy.sh
   on:
-    branch: master
+    branch: main
 
 #added for new commit
